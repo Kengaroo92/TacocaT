@@ -1,0 +1,40 @@
+﻿.custnav, .custnav .nav-link, .custnav .navbar-brand {
+    background-color: #4E5D6C;
+    font-family: Raleway;
+    color: #C0C0C0;
+    font-size: 1.0rem;
+}
+
+.custbtn, .custbtn .btn-secondary {
+    background-color: #000;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 1.0rem;
+    width: 100%;
+}
+
+.custactive {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #000;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.custfont {
+    font-family: Raleway;
+    font-size: 2.0rem;
+    text-align:center;
+}
+
+.input {
+    width: 100%;
+}
+
+.tacocat {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}

@@ -38,10 +38,9 @@
     document.getElementById("reverseString").addEventListener("keydown", function (e) {
 
         var character = (e.which) ? e.which : e.keyCode;
-        console.log(character)
 
         if (character >= 97 && character <= 122 ||
-            character >= 65 && character <= 90 || character == 8) {
+            character >= 65 && character <= 90 || character == 8 || character == 9 || character == 32) {
             return true;
         }
         else {
@@ -52,25 +51,21 @@
 
     });
 
+//function validate() {
+//const input = document.getElementById("reverseString").value;
+//     if (input.trim() === "") {
+//            document.getElementById('flipBtn').disabled = true;
+//     } else {
+//            document.getElementById('flipBtn').disabled = false;
+//            }
+//     }
 
-    //document.getElementById("reverseOutput").innerHTML = reverseWord;
+    document.getElementById("flipBtn").addEventListener("click", function () {
+        let inputWord = document.getElementById("reverseString").value;
+        if (!inputWord.trim()) {
+            return;
+        }
+    })
 
 })
-
-
-document.getElementById("reverseString").addEventListener("keydown", function (evt) {
-
-    var character = evt.which;
-        console.log(character)
-
-        if (character >= 97 && character <= 122 || character >= 65 && character <= 90) {
-            return true;
-        }
-            else {
-
-            evt.preventDefault();
-            return false;
-            }
-
-        });
 
